@@ -18,14 +18,15 @@
 
 @media screen and (max-width:800px){
     .carousel-menu > ul {margin-left: -10% !important;}
-    .carusel {height: 480px !important;}
+    .carousel {height: 480px !important;}
     .red_header {width: 48% !important;}
+    table {top:0px !important;}
+    .carousel_bottom{display: none !important;}
+    #now_in > div > div:nth-child(5) { display: inline-block !important;}
     .next_time{
         float: left !important;
         margin-left: 15%;
     }
-    table {top:0px !important;}
-    .carusel_bottom{display: none !important;}
 
 }
 
@@ -36,37 +37,44 @@
     .carousel-caption {top: 182px !important;}
     .film_name h5{margin-top: 10px !important;}
     .next_time{margin-bottom: 10px !important;}
-
     .login {margin-left: 24% !important;}
 	.mobile{display: none !important;}
-
     .dropdown{text-align: center !important;}
     .search{display: none !important;}
-
     .contacts div h5{font-size: .5em;}
     table {top:0px!important;}
-    .carusel {height: 400px !important;}
+    .carousel {height: 400px !important;}
+    .arrows { top: 65% !important; }
+
 }
 
 @media screen and (max-width: 560px){
-    .soc-ico {
-    float: none !important;
-    margin:0 auto !important;}
     .login a h5{font-size: .5em !important;}
-    .carusel{ display: none;}
-    table {top:0px!important;
-        margin-top: 50px;}
+    .carousel{ display: none;}
+    #now_in > div > div:nth-child(5) { display: none !important; }
+    #menu_mobile{display: block !important;}
+    .carousel-menu ul {margin-top: 10px !important;}
+    table {
+        top:0px!important;
+        margin-top: 50px;
+    }
+    .calendar-days th a{
+        font-size: .5em !important;
+    }
+    .soc-ico{
+        float: none !important;
+        text-align: center !important;
+    }
 }
 
-
-/*
-@media screen and (min-width: 380px;){
-	добавить внизу два табса
-	уменьшить разстояние между табсами
-	отключить карусель
+@media screen and (max-width: 380px){
+    .login {margin-left: 30% !important;}
+    .userpic h5, .cabinetpic h5 {display: none !important;}
+    .userpic, .cabinetpic{width: 30px !important;}
+    .menu_ico{display: inline-block !important;}
+    .contacts > div > h2 {font-size: 1.5em !important; }
+    #now_in > div > div:nth-child(even) { display: none !important;}
 }
-
- */
 
 
 a:focus { outline: 0 }
@@ -74,12 +82,7 @@ body {
     font-size: 16px;
     color: #fff;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
     margin: 0;
     color: #fff;
 }
@@ -174,7 +177,7 @@ button {
     color: #fff;
 }
 
-.dropdown-menu li a:hover i {
+.dropdown-menu li a:hover span {
     position: absolute;
     top: 10px;
     left: -11px;
@@ -294,9 +297,49 @@ a.cabinetpic {
     background: url('../img/logo.png') no-repeat 0 0;
 }
 
-/* Carusel */
+.menu_ico {
+    display: none;
+    width: 30px;
+    height: 25px;
+    padding:0px; 
+    background: url('../img/Sprite.png') no-repeat -255px 5px;
+}
+.dropdown-mobile{
+    position: relative;
+    top:-12px;
+    display: inline-block;
+}
 
-.carusel {
+.block{display: block !important;}
+.menu-mobile{
+    position: absolute;
+    display: none;
+    left: -94px;
+    top: 45px;
+    list-style: none;
+    padding:0px;
+    z-index:22;
+}
+.menu-mobile a{
+
+    color: #fff;
+    background-color: #ff003c;
+    font-size: 12px;
+    float: right;
+    clear: both;
+    display: table-cell;
+    padding: 2px 3px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin:1px;
+    border: 1px solid transparent;
+}
+.menu-mobile a:hover{
+    border: 1px solid #fff;
+}
+/* carousel */
+
+.carousel {
     position: relative;
     height: 495px;
     background-color: #4e4e4e;
@@ -410,7 +453,7 @@ a.cabinetpic {
     text-align: right;
 }
 #carousel-poster > ol > li.active {
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     background-color: #fff;
 }
 #carousel-poster > ol > li {
@@ -420,7 +463,7 @@ a.cabinetpic {
     margin: 1px;
     cursor: pointer;
     text-indent: -999px;
-    border: 1px solid #26293a;
+    border: 1px solid transparent;
     border-radius: 6px;
     background-color: #26293a;
 }
@@ -443,7 +486,7 @@ a.cabinetpic {
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: url('../img/carusel_name_shadbox.png') repeat 0 0;
+    background: url('../img/carousel_name_shadbox.png') repeat 0 0;
 }
 .red-stripe {
     position: absolute;
@@ -488,7 +531,7 @@ a.cabinetpic {
 .red_arrow a { background: url('../img/Sprite.png') no-repeat 0 -121px }
 .blue_arrow a:hover { margin-left: -6px }
 .red_arrow a:hover { margin-left: 6px }
-.carusel_bottom {
+.carousel_bottom {
     position: absolute;
     z-index: 16;
     top: 84.6%;
@@ -497,7 +540,7 @@ a.cabinetpic {
     width: 100%;
     height: 76px;
     margin: 0 auto;
-    background: url('../img/carusel_bot_shadbox.png') repeat 0 0;
+    background: url('../img/carousel_bot_shadbox.png') repeat 0 0;
 }
 /* Badge */
 .sms-badge-wrapper {
@@ -581,6 +624,7 @@ table {
     text-align: center;
     border: none;
     border-bottom: 4px transparent;
+    word-break: break-all;
 }
 .table > thead > tr > th > a {
     font-size: 10px;
@@ -621,24 +665,40 @@ td:hover { background-color: #209ffe }
     max-width: 100%;
     margin: 30px auto;
 }
+/* Poster */
+    /* Poster-tabs */
 .poster-tabs {
+    display: block;
     margin: 0 10px;
     padding: 0;
     list-style: none;
+}
+.poster-tabs > li > a > h4{
+    color: #000;
     text-transform: uppercase;
 }
-.poster-tabs > li > a {
-    text-decoration: none;
-    color: #000;
+
+.poster-tabs > li > a:focus,.poster-tabs > li > a:hover{
+    text-decoration: none; 
 }
 .poster-tabs li {
     display: inline-block;
     padding: 0 5px;
 }
 
-li.active a { color: #2caffd }
-.poster-conteiner { margin: 10px auto 30px; }
+li.active a h4{ color: #2caffd }
+
+.poster-conteiner {
+    margin: 10px 0 30px; 
+    text-align: center;
+    padding-left: 15px; 
+}
+
 .poster-conteiner .poster_item:last-child { margin-right: 0; }
+.tab-content{
+    display: block;
+    padding: 0 auto;
+    }
 .poster_item {
     position: relative;
     display: inline-block;
@@ -646,15 +706,18 @@ li.active a { color: #2caffd }
     height: 257px;
     margin:5px 10px 0 0;
     vertical-align: top;
+    text-align: left;
 }
+
 .poster {
     position: absolute;
     top: 160px;
     display: table-cell;
     width: 180px;
     height: 97px;
-    background: url('../img/poster-scroll.png') no-repeat 0 0;
+    background: url("../img/poster-scroll.png") no-repeat 0 0;
 }
+
 .poster h4 {
     font-weight: bold;
     position: absolute;
@@ -667,11 +730,14 @@ li.active a { color: #2caffd }
     display: block;
     margin: 21px 0 0 66px;
 }
-.glyphicon { font-size: 10px }
-.glyphicon-star { color: #68192e }
-.star-suc { color: #fcdf00 }
+
+.glyphicon { font-size: 10px; }
+.glyphicon-star { color: #68192e; }
+.star-suc { color: #fcdf00; }
+
 /* Footer */
-footer { background: #575757 url('../img/footer2.png') no-repeat 0 -13px }
+
+footer { background: #575757 url('../img/footer2.png') no-repeat 0 0; }
 .footer { height: auto; }
 .soc-ico {
     float: left;
@@ -680,19 +746,29 @@ footer { background: #575757 url('../img/footer2.png') no-repeat 0 -13px }
 }
 .soc-ico a {
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 51px;
+    height: 50px;
+    margin-right: 10px;
+    -webkit-border-radius:  7px 7px 7px 7px;
+    -o-box-shadow:          7px 7px 7px 7px;
+    -moz-box-shadow:        7px 7px 7px 7px;
+    border-radius:          7px 7px 7px 7px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -o-box-shadow:      7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 .vk-ico { background: url('../img/Sprite.png') no-repeat 0 0 }
-.fb-ico { background: url('../img/Sprite.png') no-repeat -71px 0 }
-.tw-ico { background: url('../img/Sprite.png') no-repeat -142px 0 }
-.soc-ico h5 { margin-top: -5px }
+.fb-ico { background: url('../img/Sprite.png') no-repeat -60px 0 }
+.tw-ico { background: url('../img/Sprite.png') no-repeat -120px 0 }
+.soc-ico h5 { margin: 10px 0 0 5px}
 .contacts {
-    padding: 10px 10px 0 0;
+    padding: 10px 20px 0 0;
     text-align: right;
     vertical-align: top;
 }
-.contacts h2 { display: inline-block }
+.contacts h2 { display: inline-block;
+vertical-align: top; }
 .contacts h5 {
     display: inline-block;
     margin-top: -20px;
@@ -718,4 +794,4 @@ footer { background: #575757 url('../img/footer2.png') no-repeat 0 -13px }
     height: 27px;
     background: url('../img/Sprite.png') no-repeat -219px 0;
 }
-.contacts div:last-child { margin-top: 20px }
+.contacts div:last-child { margin-top: 10px }
