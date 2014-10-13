@@ -15,6 +15,13 @@ $RECYCLE.BIN/
 *.msp
 
 # =========================
+# Grunt files
+# =========================
+.sass-cache
+gruntfile.js
+node_modules
+
+# =========================
 # Operating System Files
 # =========================
 
@@ -26,8 +33,7 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 # Thumbnails
 ._*
 
@@ -41,3 +47,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
