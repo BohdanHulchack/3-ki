@@ -396,8 +396,7 @@ a.cabinetpic {
 .carousel {
   position: relative;
   height: 495px;
-  background-color: #4e4e4e;
-  z-index: 15; }
+  background-color: #4e4e4e;}
 
 .carousel-inner {
   height: 495px; }
