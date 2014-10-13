@@ -1,384 +1,936 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Project T</title>
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<link media="all" rel="stylesheet" href="css/index.css" type="text/css"/>
-
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Project T</title>
+    <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap-theme.css' rel='stylesheet' type='text/css'>
+    <link href='img/logo.ico' rel='shortcut icon' type='text/css'>
+    <link href='css/index.css' media='all' rel='stylesheet' type='text/css'>
+    <script src='js/bootstrap.min.js' type='text/javascript'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<body>
-<div class="layout">
-<!-- Header -->
-	<header>
-		<div class="blue_header">
-			<div class="navigation-left">
-				<input class="search" type="text" placeholder="Пошук">
-				<div class="dropdown">
-				  <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-				    <span class="eye"></span>
-				    <span class="caret"></span>
-				    Вінниця
-				  </button>
-				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span></span>Київ</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span></span>Львів</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span></span>Тернопіль</a></li>
-				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span></span>Конотоп</a></li>
-				  </ul>
-				</div>
-			</div>
-		</div>
-		<div class="red_header">
-				<div class="navigation-right">
-						<div class="login">
-							<a class="userpic" href="#">
-								<h5>вхід</h5>
-							</a>
-							<a class="cabinetpic" href="#">
-								<h5>кабінет</h5>
-							</a>
-							<div class="dropdown-mobile">
-							  <button class="menu_ico">
-							  </button>
-							  <ul class="menu-mobile">
-							    <li><a href="#">Фільми</a></li>
-							    <li><a href="#">Розклад</a></li>
-							    <li><a href="#">Реклама на сайті</a></li>
-							    <li><a href="#">Контакти</a></li>
-							  </ul>
-							</div>
-						</div>
-						<div class="mobile">
-							<p>Квитки <br>в твоєму телефоні</p>
-							<a href="" class="apple_ico"></a>
-							<a href="" class="android_ico"></a>
-						</div>
-
-				</div>
-		</div>
-		<div class="logo"></div>
-	</header>
-<!-- carousel -->
-	<section>
-		<div class="carousel">
-			<div>
-				<div class="carousel-menu">
-					<ul>
-						<li><a href="#"><i></i><h5>Фільми</h5></a></li>
-						<li><a href="#"><i></i><h5>Розклад</h5></a></li>
-						<li><a href="#"><i></i><h5>Реклама на сайті</h5></a></li>
-						<li><a href="#"><i></i><h5>Контакти</h5></a></li>
-					</ul>
-				</div>
-				<div class="carousel-poster-info">
-					<div class="caption-box">
-						<div class="red-stripe"></div>
-					</div>
-				</div>
-			</div>
-			<div id="carousel-poster" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-poster" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-poster" data-slide-to="1"></li>
-			    <li data-target="#carousel-poster" data-slide-to="2"></li>
-			    <li data-target="#carousel-poster" data-slide-to="3"></li>
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			    	<div class="carousel-caption">
-				        <div class="next_time">
-				       		<h5>До найближчого <br>сеансу залишилось</h5>
-				       		<h2>01:45</h2>
-				       	</div>
-						<div class="film_name">
-							<h1>Гравітація</h1>
-							<h3>Gravity</h3>
-							<h5>21.10 - 25.10.2013</h5>
-						</div>	
-			      </div>
-			      <img src="img/carousel_posters/poster_big_2.jpg" alt="Голодні ігри">
-
-			    </div>
-			    <div class="item">
-			    	<div class="carousel-caption">
-				        <div class="next_time">
-				       		<h5>До найближчого <br>сеансу залишилось</h5>
-				       		<h2>02:30</h2>
-				       	</div>
-						<div class="film_name">
-							<h1>Голодні ігри</h1>
-							<h3>Hunger Games</h3>
-							<h5>11.12 - 25.11.2014</h5>
-						</div>	
-			      </div>
-			      <img src="img/carousel_posters/poster_big_1.png" alt="Неутримані">
-			    </div>
-			    <div class="item">
-			    	<div class="carousel-caption">
-				        <div class="next_time">
-				       		<h5>До найближчого <br>сеансу залишилось</h5>
-				       		<h2>00:30</h2>
-				       	</div>
-						<div class="film_name">
-							<h1>Нестримні 3</h1>
-							<h3>Expendabless 3</h3>
-							<h5>11.10 - 05.11.2014</h5>
-						</div>	
-			      </div>
-			      <img src="img/carousel_posters/poster_big_3.jpg" alt="Гравітація">
-			    </div>
-			    <div class="item">
-			    	<div class="carousel-caption">
-				        <div class="next_time">
-				       		<h5>До найближчого <br>сеансу залишилось</h5>
-				       		<h2>02:30</h2>
-				       	</div>
-						<div class="film_name">
-							<h1>Оселя зла</h1>
-							<h3>Resident Evil</h3>
-							<h5>11.12 - 25.11.2014</h5>
-						</div>	
-			      </div>
-			      <img src="img/carousel_posters/poster_big_4.jpg" alt="Неутримані">
-			    </div>
-			  </div>
-				<!-- Arrows -->
-				<div class="arrows">
-					<div class="blue_arrow">
-						<a href="#carousel-poster" role="button" data-slide="prev"></a>
-					</div>
-					<div class="red_arrow">
-						<a href="#carousel-poster" role="button" data-slide="next"></a>
-					</div>
-				</div>
-			</div>
-			<div class="carousel_bottom"></div>	
-		</div>
-	</section>
-<!-- Calendar -->
-	<section class="cal_bg">
-		<div class="calendar wrapper">
-	<!-- Badge -->
-		<div class="sms-badge-wrapper">
-		<div class="sms-badge">
-			<div>
-				<h5>дізнавайся <br>про найновіше </h5>
-				<h4>першим!</h4>
-				<h6>Введи свій номер <br> та отримуй смс сповіщення про новинки в кіноіндустрії</h6>
-			</div>
-		</div>
-			<a href="#" class="sms-badge-arrow">
-				<img src="img/badge_arrow.png" alt="Введіть номер телефону">
-			</a>
-		</div>
-	<!-- / Badge -->
-			<div class="table-responsive">
-				<table class="table">
-					<thead>
-						<tr class="calendar-days">
-							<th><a href="#">Понеділок</a></th>
-							<th><a href="#">Вівторок</a></th>
-							<th><a href="#">Середа</a></th>
-							<th><a href="#">четверг</a></th>
-							<th><a href="#">П'ятниця</a></th>
-							<th><a href="#">Субота</a></th>
-							<th><a href="#">Неділя</a></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="#" class="prev_month">30</a></td>
-							<td><a href="#">1</a></td>
-							<td><a href="#">2</a></td>
-							<td><a href="#">3</a></td>
-							<td><a href="#">4</a></td>
-							<td><a href="#">5</a></td>
-							<td><a href="#">6</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">7</a></td>
-							<td><a href="#">8</a></td>
-							<td><a href="#">9</a></td>
-							<td><a href="#">10</a></td>
-							<td><a href="#">11</a></td>
-							<td><a href="#">12</a></td>
-							<td><a href="#">13</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">14</a></td>
-							<td><a href="#">15</a></td>
-							<td><a href="#">16</a></td>
-							<td><a href="#">17</a></td>
-							<td><a href="#">18</a></td>
-							<td><a href="#">19</a></td>
-							<td><a href="#">20</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">21</a></td>
-							<td><a href="#">22</a></td>
-							<td><a href="#">23</a></td>
-							<td><a href="#">24</a></td>
-							<td><a href="#">25</a></td>
-							<td><a href="#">26</a></td>
-							<td><a href="#">27</a></td>
-						</tr>
-						<tr>
-							<td><a href="#">28</a></td>
-							<td><a href="#">29</a></td>
-							<td><a href="#">30</a></td>
-							<td><a href="#" class="prev_month">1</a></td>
-							<td><a href="#" class="prev_month">2</a></td>
-							<td><a href="#" class="prev_month">3</a></td>
-							<td><a href="#" class="prev_month">4</a></td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</section>
-<!-- Tabs -->
-	<section class="tabs_bg">
-		<div class=" wrapper">
-			<a href="#"><img src="img/banner.png" alt="Adv" class="adv"></a>
-			<div class="row">
-	<!-- Nav tabs -->
-				<ul class="poster-tabs" role="tablist">
-					<li class="active"><a href="#now_in" role="tab" data-toggle="tab"><h4>Зараз в прокаті</h4></a></li> 
-					<li>|</li>
-					<li><a href="#soon" role="tab" data-toggle="tab"><h4>Незабаром на екранах</h4></a></li>
-				</ul>
-	<!-- Tab panes -->
-				<div class="tab-content">
-				  <div class="tab-pane active" id="now_in">
-				  	<div class="poster-conteiner">
-				  		<div class="poster_item">
-				  			<img src="img/Posters/1.png" alt="">
-				  			<a class="poster" href="#">
-				  				<div class="stars">
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-				  				</div>
-								<h4>Сталінград</h4>
-				  			</a>
-				  		</div>
-				  		<div class="poster_item">
-				  			<img src="img/Posters/2.png" alt="">
-				  			<a class="poster" href="#">
-				  				<div class="stars">
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-				  				</div>
-				  				<h4>Будинок <br>забутих речей</h4>
-				  			</a>
-				  		</div>				  		
-				  		<div class="poster_item">
-				  			<img src="img/Posters/3.png" alt="">
-				  			<a class="poster" href="#">
-				  				<div class="stars">
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-				  				</div>
-				  				<h4>План втечі</h4>
-				  			</a>
-				  		</div>
-				  		<div class="poster_item">
-				  			<img src="img/Posters/4.png" alt="">
-				  			<a class="poster" href="#">
-				  				<div class="stars">
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-				  				</div>
-				  				<h4>Гравітація</h4>
-				  			</a>
-				  		</div>
-				  		<div class="poster_item">
-				  			<img src="img/Posters/5.png" alt="">
-				  			<a class="poster" href="#">
-				  				<div class="stars">
-					  				<i class="glyphicon glyphicon-star star-suc"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-					  				<i class="glyphicon glyphicon-star"></i>
-				  				</div>
-				  				<h4>Ромео і <br>Джульєтта</h4>
-				  			</a>
-				  		</div>
-				  	</div>
-				  </div>
-				  <div class="tab-pane" id="soon">...</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- Footer -->
-	<footer>
-		<div class="footer wrapper">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="soc-ico">
-					<a href="#" class="vk-ico"></a>
-					<a href="#" class="fb-ico"></a>
-					<a href="#" class="tw-ico"></a>
-					<h5>© Мережа кінотеатрів «3», 2013</h5>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="contacts">
-					<div>
-						<h2>(0432) 508 508</h2>
-						<div class="red_stripe"></div>
-						<h5>Щодня <br><span>9:00-22:00</span></h5>
-					</div>
-					<div>
-						<div class="uvaga"></div>
-						<h5>Всі дзвінки по Україні зі стаціонарних телефонів безкоштовні</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</footer>
-</div>
-  
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script>
-$('.carousel').carousel({
-	interval: 5000
-})
-
-$( ".dropdown-mobile" ).click(function() {
-$( ".menu-mobile" ).toggleClass( "block" )
-});
-
-</script>
-</body>
+  </head>
+  <body>
+    <div class='layout'>
+      <!-- Header -->
+      <header>
+        <div class='blue_header'>
+          <div class='navigation-left'>
+            <input class='search' placeholder='Пошук' type='text'>
+            <div class='dropdown'>
+              <button class='dropdown-toggle' data-toggle='dropdown' id='dropdownMenu1' type='button'>
+                <span class='eye'></span>
+                <span class='caret'></span>
+                Вінниця
+              </button>
+              <ul aria-labelledby='dropdownMenu1' class='dropdown-menu' role='menu'>
+                <li role='presentation'>
+                  <a href='#' role='menuitem' tabindex='-1'><span></span>Київ
+                  </a>
+                </li>
+                <li role='presentation'>
+                  <a href='#' role='menuitem' tabindex='-1'><span></span>Львів
+                  </a>
+                </li>
+                <li role='presentation'>
+                  <a href='#' role='menuitem' tabindex='-1'><span></span>Тернопіль
+                  </a>
+                </li>
+                <li role='presentation'>
+                  <a href='#' role='menuitem' tabindex='-1'><span></span>Конотоп
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='red_header'>
+          <div class='navigation-right'>
+            <div class='login'>
+              <a class='userpic' href='#'>
+                <h5>вхід</h5>
+              </a>
+              <a class='cabinetpic' href='#'>
+                <h5>кабінет</h5>
+              </a>
+              <div class='dropdown-mobile'>
+                <button class='menu_ico'></button>
+                <ul class='menu-mobile'>
+                  <li>
+                    <a href='#'>Фільми</a>
+                  </li>
+                  <li>
+                    <a href='#'>Розклад</a>
+                  </li>
+                  <li>
+                    <a href='#'>Реклама на сайті</a>
+                  </li>
+                  <li>
+                    <a href='#'>Контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='mobile'>
+              <p>
+                Квитки
+                <br>в твоєму телефоні</br>
+              </p>
+              <a class='apple_ico' href=''></a>
+              <a class='android_ico' href=''></a>
+            </div>
+          </div>
+        </div>
+        <div class='logo'></div>
+        <!-- Registration_popup -->
+        <div class='reg-wrapper'>
+          <span class='reg-triangle'></span>
+          <span class='closer'>X</span>
+          <ul class='reg-tablist' role='tablist'>
+            <li class='active'>
+              <a data-toggle='tab' href='#enter' role='tab'>
+                Вхід
+              </a>
+            </li>
+            <li></li>
+            <li>
+              <a data-toggle='tab' href='#reg' role='tab'>
+                Реєстрація
+              </a>
+            </li>
+          </ul>
+          <div class='tab-content'>
+            <div class='tab-pane active' id='enter'>
+              <div class='soc-enter'>
+                <h4>Реєстрація через мережу</h4>
+                <a class='reg-vk' href='#'></a>
+                <a class='reg-fb' href='#'></a>
+                <a class='reg-tw' href='#'></a>
+              </div>
+              <form>
+                <div>
+                  <label for='mail'>E-mail:</label>
+                  <input alt='' id='mail' placeholder='' type='mail'>
+                </div>
+                <div>
+                  <label for='pass'>Пароль:</label>
+                  <input alt='' id='pass' placeholder='' type='password'>
+                  <input class='glyphicon glyphicon-eye-open' id='passwatch' name='pass' onchange="if ($('#pass').get(0).type=='password') $('#pass').get(0).type='text'; else $('#pass').get(0).type='password';" type='checkbox' value='false'>
+                </div>
+              </form>
+              <div class='enter_btn'>
+                <button>Увійти</button>
+                <a class='reg_mistake' href='#'>Помилка?</a>
+              </div>
+            </div>
+            <div class='tab-pane active' id='reg'></div>
+            <!-- /Registration_popup -->
+          </div>
+        </div>
+      </header>
+      <!-- carousel -->
+      <section>
+        <div class='carousel'>
+          <div>
+            <div class='carousel-menu'>
+              <ul>
+                <li>
+                  <a href='#'>
+                    <i></i>
+                    <h5>Фільми</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <i></i>
+                    <h5>Розклад</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <i></i>
+                    <h5>Реклама на сайті</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <i></i>
+                    <h5>Контакти</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class='carousel-poster-info'>
+              <div class='caption-box'>
+                <div class='red-stripe'></div>
+              </div>
+            </div>
+          </div>
+          <div class='carousel slide' data-ride='carousel' id='carousel-poster'>
+            <!-- Indicators -->
+            <ol class='carousel-indicators'>
+              <li class='active' data-slide-to='0' data-target='#carousel-poster'></li>
+              <li data-slide-to='1' data-target='#carousel-poster'></li>
+              <li data-slide-to='2' data-target='#carousel-poster'></li>
+              <li data-slide-to='3' data-target='#carousel-poster'></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class='carousel-inner'>
+              <div class='item active'>
+                <div class='carousel-caption'>
+                  <div class='next_time'>
+                    <h5>
+                      До найближчого
+                      <br>сеансу залишилось</br>
+                    </h5>
+                    <h2>01:45</h2>
+                  </div>
+                  <div class='film_name'>
+                    <h1>Гравітація</h1>
+                    <h3>Gravity</h3>
+                    <h5>21.10 - 25.10.2013</h5>
+                  </div>
+                </div>
+                <img alt='Голодні ігри' src='img/carousel_posters/poster_big_2.jpg'>
+              </div>
+              <div class='item'>
+                <div class='carousel-caption'>
+                  <div class='next_time'>
+                    <h5>
+                      До найближчого
+                      <br>сеансу залишилось</br>
+                    </h5>
+                    <h2>02:30</h2>
+                  </div>
+                  <div class='film_name'>
+                    <h1>Голодні ігри</h1>
+                    <h3>Hunger Games</h3>
+                    <h5>11.12 - 25.11.2014</h5>
+                  </div>
+                </div>
+                <img alt='Неутримані' src='img/carousel_posters/poster_big_1.png'>
+              </div>
+              <div class='item'>
+                <div class='carousel-caption'>
+                  <div class='next_time'>
+                    <h5>
+                      До найближчого
+                      <br>сеансу залишилось</br>
+                    </h5>
+                    <h2>00:30</h2>
+                  </div>
+                  <div class='film_name'>
+                    <h1>Нестримні 3</h1>
+                    <h3>Expendabless 3</h3>
+                    <h5>11.10 - 05.11.2014</h5>
+                  </div>
+                </div>
+                <img alt='Гравітація' src='img/carousel_posters/poster_big_3.jpg'>
+              </div>
+              <div class='item'>
+                <div class='carousel-caption'>
+                  <div class='next_time'>
+                    <h5>
+                      До найближчого
+                      <br>сеансу залишилось</br>
+                    </h5>
+                    <h2>02:30</h2>
+                  </div>
+                  <div class='film_name'>
+                    <h1>Оселя зла</h1>
+                    <h3>Resident Evil</h3>
+                    <h5>11.12 - 25.11.2014</h5>
+                  </div>
+                </div>
+                <img alt='Неутримані' src='img/carousel_posters/poster_big_4.jpg'>
+              </div>
+            </div>
+            <!-- Arrows -->
+            <div class='arrows'>
+              <div class='blue_arrow'>
+                <a data-slide='prev' href='#carousel-poster' role='button'></a>
+              </div>
+              <div class='red_arrow'>
+                <a data-slide='next' href='#carousel-poster' role='button'></a>
+              </div>
+            </div>
+          </div>
+          <div class='carousel_bottom'></div>
+        </div>
+      </section>
+      <!-- Calendar -->
+      <section class='cal_bg'>
+        <div class='calendar wrapper'>
+          <!-- Badge -->
+          <div class='sms-badge-wrapper'>
+            <div class='sms-badge'>
+              <div>
+                <h5>дізнавайся про найновіше</h5>
+                <h4>першим!</h4>
+                <h6>
+                  Введи свій номер
+                  <br>
+                  та отримуй смс сповіщення про новинки в кіноіндустрії
+                </h6>
+              </div>
+            </div>
+            <a class='sms-badge-arrow' href='#'>
+              <img alt='Введіть номер телефону' src='img/badge_arrow.png'>
+            </a>
+          </div>
+          <!-- / Badge -->
+          <div class='table-responsive'>
+            <table class='table'>
+              <thead>
+                <tr class='calendar-days'>
+                  <th>
+                    <a href='#'>Понеділок</a>
+                  </th>
+                  <th>
+                    <a href='#'>Вівторок</a>
+                  </th>
+                  <th>
+                    <a href='#'>Середа</a>
+                  </th>
+                  <th>
+                    <a href='#'>Четвер</a>
+                  </th>
+                  <th>
+                    <a href='#'>П'ятниця</a>
+                  </th>
+                  <th>
+                    <a href='#'>Субота</a>
+                  </th>
+                  <th>
+                    <a href='#'>Неділя</a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class='prev_month'>
+                    <span>30</span>
+                  </td>
+                  <td>
+                    <span>1</span>
+                  </td>
+                  <td>
+                    <span>2</span>
+                  </td>
+                  <td>
+                    <span>3</span>
+                  </td>
+                  <td>
+                    <span>4</span>
+                  </td>
+                  <td>
+                    <span>5</span>
+                  </td>
+                  <td>
+                    <span>6</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>7</span>
+                  </td>
+                  <td>
+                    <span>8</span>
+                  </td>
+                  <td>
+                    <span>9</span>
+                  </td>
+                  <td>
+                    <span>10</span>
+                  </td>
+                  <td>
+                    <span>11</span>
+                  </td>
+                  <td>
+                    <span>12</span>
+                  </td>
+                  <td>
+                    <span>13</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>14</span>
+                  </td>
+                  <td>
+                    <span>15</span>
+                  </td>
+                  <td>
+                    <span>16</span>
+                  </td>
+                  <td>
+                    <span>17</span>
+                  </td>
+                  <td>
+                    <span>18</span>
+                  </td>
+                  <td>
+                    <span>19</span>
+                  </td>
+                  <td>
+                    <span>20</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>21</span>
+                  </td>
+                  <td>
+                    <span>22</span>
+                  </td>
+                  <td>
+                    <span>23</span>
+                  </td>
+                  <td>
+                    <span>24</span>
+                  </td>
+                  <td>
+                    <span>25</span>
+                  </td>
+                  <td>
+                    <span>26</span>
+                  </td>
+                  <td>
+                    <span>27</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>28</span>
+                  </td>
+                  <td>
+                    <span>29</span>
+                  </td>
+                  <td>
+                    <span>30</span>
+                  </td>
+                  <td class='prev_month'>
+                    <span>1</span>
+                  </td>
+                  <td class='prev_month'>
+                    <span>2</span>
+                  </td>
+                  <td class='prev_month'>
+                    <span>3</span>
+                  </td>
+                  <td class='prev_month'>
+                    <span>4</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Tabs -->
+      <section class='tabs_bg'>
+        <div class='wrapper'>
+          <a href='#'>
+            <img alt='Adv' class='adv' src='img/banner.png'>
+          </a>
+          <div class='row'>
+            <!-- Nav tabs -->
+            <ul class='poster-tabs' role='tablist'>
+              <li class='active'>
+                <a data-toggle='tab' href='#now_in' role='tab'>
+                  <h4>Зараз в прокаті</h4>
+                </a>
+              </li>
+              <li>|.</li>
+              <li>
+                <a data-toggle='tab' href='#soon' role='tab'>
+                  <h4>Незабаром на екранах</h4>
+                </a>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class='tab-content'>
+              <div class='tab-pane active' id='now_in'>
+                <div class='poster-conteiner'>
+                  <div class='poster_item'>
+                    <img alt='' src='img/Posters/1.png'>
+                    <a class='poster' href='#'>
+                      <div class='stars'>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                      </div>
+                      <h4>Сталінград</h4>
+                    </a>
+                  </div>
+                  <div class='poster_item'>
+                    <img alt='' src='img/Posters/2.png'>
+                    <a class='poster' href='#'>
+                      <div class='stars'>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                      </div>
+                      <h4>
+                        Будинок
+                        <br>забутих речей</br>
+                      </h4>
+                    </a>
+                  </div>
+                  <div class='poster_item'>
+                    <img alt='' src='img/Posters/3.png'>
+                    <a class='poster' href='#'>
+                      <div class='stars'>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                      </div>
+                      <h4>План втечі</h4>
+                    </a>
+                  </div>
+                  <div class='poster_item'>
+                    <img alt='' src='img/Posters/4.png'>
+                    <a class='poster' href='#'>
+                      <div class='stars'>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                      </div>
+                      <h4>Гравітація</h4>
+                    </a>
+                  </div>
+                  <div class='poster_item'>
+                    <img alt='' src='img/Posters/5.png'>
+                    <a class='poster' href='#'>
+                      <div class='stars'>
+                        <i class='glyphicon glyphicon-star star-suc'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                        <i class='glyphicon glyphicon-star'></i>
+                      </div>
+                      <h4>Ромео і Джульєтта</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class='tab-pane' id='soon'>...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <div class='footer wrapper'>
+          <div class='row'>
+            <div class='col-md-6'>
+              <div class='soc-ico'>
+                <a class='vk-ico' href='#'></a>
+                <a class='fb-ico' href='#'></a>
+                <a class='tw-ico' href='#'></a>
+                <h5>© Мережа кінотеатрів «3», 2013</h5>
+              </div>
+            </div>
+            <div class='col-md-6'>
+              <div class='contacts'>
+                <div>
+                  <h2>(0432) 508 508</h2>
+                  <div class='red_stripe'></div>
+                  <h5>
+                    Щодня
+                    <br>
+                    <span>9:00-22:00</span>
+                  </h5>
+                </div>
+                <div>
+                  <div class='uvaga'></div>
+                  <h5>Всі дзвінки по Україні зі стаціонарних телефонів безкоштовні</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
-
-
+<div class='hideblocks'>
+  <div class='ticket-popup'>
+    <div id='ticket-wrapper'>
+      <span class='ticket-closer'>X</span>
+      <h4>Бронювання квитків</h4>
+      <form>
+        <div>
+          <label for='date'>Дата:</label>
+          <div class='select_wrapper'>
+            <select id='date'>
+              <option value='1'>01.10</option>
+              <option value='2'>02.10</option>
+              <option value='3'>03.10</option>
+              <option value='4'>04.10</option>
+              <option value='5'>05.10</option>
+              <option value='6'>06.10</option>
+              <option value='7'>07.10</option>
+              <option value='8'>08.10</option>
+              <option value='9'>09.10</option>
+              <option value='10'>10.10</option>
+              <option value='11'>11.10</option>
+              <option value='12'>12.10</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for='film'>Фільм:</label>
+          <div class='select_wrapper'>
+            <select id='film'>
+              <option value='1'>Гравітація</option>
+              <option value='2'>Нестримні 3</option>
+              <option value='3'>Голодні ігри 2</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for='film_time'>Час сеансу:</label>
+          <div class='select_wrapper'>
+            <select id='film_time'>
+              <option value='1'>19.00</option>
+              <option value='2'>15.00</option>
+              <option value='3'>22.00</option>
+            </select>
+          </div>
+        </div>
+        <div class='ticket_picker'>
+          <label for='ticket_picker'>Місце у залі:</label>
+          <a id='ticket_picker_open'>Схема посадочних місць залу</a>
+          <div id='ticket_picker'></div>
+        </div>
+        <div>
+          <label for='pay_type'>Вид оплати:</label>
+          <div class='select_wrapper'>
+            <select id='pay_type'>
+              <option value='1'>Webmoney</option>
+              <option value='2'>Приватбанк</option>
+              <option value='3'>Qivi</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div id='ticket_btn'>
+        <span>
+          Сума до сплати:
+          <span id='price_calc'></span>
+        </span>
+        <button>Купити</button>
+      </div>
+      <span class='ticket-triangle'></span>
+      <!-- place-picker -->
+      <div class='ticket_place'>
+        <div class='seat-conteiner'>
+          <span class='screen'></span>
+          <div class='line line_1'>
+            <p>1</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>1</p>
+          </div>
+          <div class='line line_2'>
+            <p>2</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>2</p>
+          </div>
+          <div class='line line_3'>
+            <p>3</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>3</p>
+          </div>
+          <div class='line line_4'>
+            <p>4</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>4</p>
+          </div>
+          <div class='line line_5'>
+            <p>5</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>5</p>
+          </div>
+          <div class='line line_6'>
+            <p>6</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>6</p>
+          </div>
+          <div class='line line_7'>
+            <p>7</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>7</p>
+          </div>
+          <div class='line line_8'>
+            <p>8</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>8</p>
+          </div>
+          <div class='line line_9'>
+            <p>9</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>9</p>
+          </div>
+          <div class='line line_10'>
+            <p>10</p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='popup_small'>
+    <div id='popup_small'>
+      <p id='chosen_index'></p>
+      <p id='price'></p>
+      <div class='popup-triangle'></div>
+    </div>
+  </div>
+</div>
+<script src='js/script.js' type='text/javascript'></script>
